@@ -10,9 +10,9 @@ export const Projects = [
     {
         id : 2,
         title : 'Website Portofolio',
-        desc : 'Website portofolio ini adalah salah satu website hasil dari belajar menggunakan framework Next Js. Seperti pada umumnya website ini berisikan tentang informasi diri dari pembuat.',
+        desc : 'Website portofolio ini adalah salah satu website hasil dari belajar menggunakan framework Next Js. Seperti pada umumnya website ini adalah website statis berisikan tentang informasi diri dari pembuat.',
         tech : 'Next Js, Bootstrap',
-        url : 'https://github.com/habibmahaasin/Monitoring-Platform-IOT',
-        img : 'smart-trash-can'
+        url : 'https://github.com/habibmahaasin/mahaasin.my.id',
+        img : 'portofolio-updated-2023'
     },
 ]
