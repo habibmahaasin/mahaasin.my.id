@@ -17,7 +17,7 @@ export const Contact = [
     {
         id : 4,
         name : 'LinkedIn',
-        url : 'https://linkedin.com/in/habib-irfan-mahaasin/',
+        url : 'https://linkedin.com/in/habib-irfan-mahaasin',
     },
     {
         id : 5,
@@ -32,6 +32,6 @@ export const Contact = [
     {
         id : 7,
         name : 'GitHub',
-        url : 'https://github.com/habibmahaasin/',
+        url : 'https://github.com/habibmahaasin',
     },
 ]
