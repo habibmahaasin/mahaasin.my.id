@@ -29,4 +29,9 @@ export const Contact = [
         name : 'Facebook',
         url : 'https://www.facebook.com/Habibirf',
     },
+    {
+        id : 7,
+        name : 'GitHub',
+        url : 'https://github.com/habibmahaasin/',
+    },
 ]
