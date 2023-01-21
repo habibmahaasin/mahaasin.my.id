@@ -71,10 +71,10 @@ function HomePage({dataSkill, dataExp}) {
 export default HomePage;
 
 export async function getStaticProps(){
-    const responseSnT = await fetch('http://localhost:3000/api/skills-tools')
+    const responseSnT = await fetch('https://mahaasin.my.id/api/skills-tools')
     const dataSnT = await responseSnT.json()
 
-    const responseExperience = await fetch('http://localhost:3000/api/experience')
+    const responseExperience = await fetch('https://mahaasin.my.id/api/experience')
     const dataExperience = await responseExperience.json()
 
     return{
