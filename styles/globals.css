@@ -222,6 +222,17 @@ a {
   bottom: -5px;
 }
 
+.copyright-head span{
+  background: #fafafa;
+  text-align: center;
+  color: #056676;
+  padding: 2px 6px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid #eaeaea;
+}
+
 .s-url span{
   background: #fafafa;
   text-align: center;
@@ -331,4 +342,25 @@ a {
   position: absolute !important;
   width: 1px;
   word-wrap: normal !important;
+}
+
+.pagenf{
+  height: 80vh;
+  padding-top: 85px;
+  overflow-y: hidden;
+}
+
+.back-home{
+  text-decoration: none;
+  background-color: #056676;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.back-home:hover{
+  color: #056676;
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.175);
 }

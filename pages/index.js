@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
-function HomePage({dataSkill, dataExp}) {
+function HomePage({dataSkill, dataExp, title}) {
   return (
     <div>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <h4 className='page-title mt-2'><span>About</span> Me</h4>
       <div className="d-flex justify-content-between">
         <div className="card mt-3">
@@ -44,7 +48,7 @@ function HomePage({dataSkill, dataExp}) {
       <h4 className='page-title mt-4'><span>Work</span> Experience</h4>
       {dataExp.map((exp) => {
         return(
-          <Link href={'#'} className='card-nav'>
+          <Link href={'/'} className='card-nav'>
             <div className="card mt-4 rounded-4 pb-2" key={exp.id}>
               <div className="card-body">
                 <div className="row align-middle">
@@ -80,7 +84,8 @@ export async function getStaticProps(){
     return{
         props:{
             dataSkill : dataSnT,
-            dataExp : dataExperience
+            dataExp : dataExperience,
+            title : 'Sin - Homepage'
         }
     }
 }

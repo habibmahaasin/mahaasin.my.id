@@ -1,8 +1,9 @@
 import {useState, useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 
-function ProjectsPage() {
+function ProjectsPage({title}) {
   const [isLoading,setIsLoading] = useState(true)
   const [projects,setProjectList] = useState(null)
 
@@ -27,8 +28,11 @@ function ProjectsPage() {
 
   return (
     <div>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <div className="content">
-        <h4 className='page-title'><span>Recent</span> Project</h4>
+        <h4 className='page-title mt-2'><span>Recent</span> Project</h4>
         {projects.map((project) => {
           return(
             <div key={project.id}>
@@ -57,3 +61,11 @@ function ProjectsPage() {
 }
 
 export default ProjectsPage;
+
+export async function getStaticProps(){
+  return{
+    props:{
+      title : 'Sin - Project'
+    }
+  }
+}
