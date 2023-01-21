@@ -128,6 +128,7 @@ a {
   border-radius: 8px;
   border: 1px solid #eaeaea;
   margin-top: 10px;
+  transition: .2s ease;
 }
 
 .social-media:hover{
@@ -137,6 +138,7 @@ a {
 .sosmed-url{
   text-decoration: none;
   color: #333333;
+  transition: .2s ease;
 }
 
 .sosmed-url:hover{
@@ -364,4 +366,19 @@ a {
   color: #056676;
   background: #fafafa;
   border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.icon-png{
+  margin-bottom: 20px;
+  margin-top: 12px;
+  transition: .2s ease;
+}
+
+.icon-png:hover{
+  transform: scale(1.2);
+}
+
+.wrapper-image{
+  margin-top: 100px;
+  max-width: 540px;
 }

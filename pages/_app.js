@@ -6,6 +6,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 function MyApp({ Component, pageProps }) {
+  if (Component.getLayout){
+    return Component.getLayout(<Component {...pageProps} />)
+  }
+  
   return(
     <> 
       <Head>
