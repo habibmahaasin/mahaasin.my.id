@@ -16,7 +16,7 @@ function HomePage({dataSkill, dataExp}) {
               </div>
               <div className='col-6 heading-profile w-75 mt-auto mb-auto'>
                 <h4 className='mt-3'>Habib Irfan Mahaasin</h4>
-                <p className='mini-title'>Junior <span>Web Development</span></p>
+                <p className='mini-title'>Junior <span>Web Developer</span></p>
               </div>
             </div>
             <p className='intro mt-4' align='justify'> Hi! , I'm <span>Habib Irfan Mahaasin</span> Junior Website Developer from Telkom University. I'm interested in learning about website development, especially the front-end web development with various frameworks, but I'm also still learning some parts of the back-end web development even though it's not too intensive.</p>
