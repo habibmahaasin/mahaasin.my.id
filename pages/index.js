@@ -1,36 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import {useState, useEffect} from 'react'
 
-function HomePage() {
-  const [isLoading,setIsLoading] = useState(true)
-  const [skillsAndTools,setSkillsAndTools] = useState(null)
-  const [experience,setExperience] = useState(null)
-
-  useEffect (() => {
-    async function fetchAllData() {
-        const responseSnT = await fetch('/api/skills-tools')
-        const dataSnT = await responseSnT.json()
-        setSkillsAndTools(dataSnT)
-
-        const responseExperience = await fetch('/api/experience')
-        const dataExperience = await responseExperience.json()
-        setExperience(dataExperience)
-
-        setIsLoading(false)
-    }
-    fetchAllData()
-  },[])
-
-  if (isLoading) {
-    return (
-      <div className='d-flex justify-content-center align-content-center loading-bar'>
-        <div className="spinner-grow" role="status">
-        </div>
-      </div>
-    )
-  }
-
+function HomePage({dataSkill, dataExp}) {
   return (
     <div>
       <h4 className='page-title mt-2'><span>About</span> Me</h4>
@@ -55,7 +26,7 @@ function HomePage() {
       <h4 className='page-title mt-4'>Skills & <span>Tools</span></h4>
       <div className="horizontal-slider-container mt-3 mb-5">
         <ul className="horizonal-slider">
-          {skillsAndTools.map((skill_tools) => {
+          {dataSkill.map((skill_tools) => {
             return (
               <li key={skill_tools.id}>
                 <div className='image-container-index'>
@@ -71,7 +42,7 @@ function HomePage() {
         </ul>
       </div>
       <h4 className='page-title mt-4'><span>Work</span> Experience</h4>
-      {experience.map((exp) => {
+      {dataExp.map((exp) => {
         return(
           <Link href={'#'} className='card-nav'>
             <div className="card mt-4 rounded-4 pb-2" key={exp.id}>
@@ -98,3 +69,18 @@ function HomePage() {
 }
 
 export default HomePage;
+
+export async function getStaticProps(){
+    const responseSnT = await fetch('http://localhost:3000/api/skills-tools')
+    const dataSnT = await responseSnT.json()
+
+    const responseExperience = await fetch('http://localhost:3000/api/experience')
+    const dataExperience = await responseExperience.json()
+
+    return{
+        props:{
+            dataSkill : dataSnT,
+            dataExp : dataExperience
+        }
+    }
+}
