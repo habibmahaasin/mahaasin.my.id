@@ -11,7 +11,7 @@ export default function PageNotFound({title}) {
       <div className='d-flex justify-content-center align-middle'>
         <div className='wrapper-image w-50'>
           <div className='image-container'>
-            <Image src={`/404.svg`} className='image' height='100' width='100' alt="404" />
+            <Image src={`/404.svg`} className='image' height='100' width='100' alt="404" priority />
           </div>
         </div>
       </div>

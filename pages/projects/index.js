@@ -39,7 +39,7 @@ function ProjectsPage({title}) {
               <div className='card mt-3 border-0 project-card'>
                 <div className='card-body'>
                   <div className='image-container'>
-                    <Image src={`/projects/${project.img}.svg`} width='100' height='100' className='image' />
+                    <Image src={`/projects/${project.img}.svg`} width='100' height='100' className='image' alt={project.title} priority/>
                   </div>
                   <Link href={`${project.url}`} className='title-url' target={'_blank'}>
                     <div className='title-span mt-3 mb-3'>
