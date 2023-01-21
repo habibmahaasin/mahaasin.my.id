@@ -6,7 +6,7 @@ function Contact({contactlist}){
         <div className="contact-section">
             <h4 className='page-title mt-2'><span>Get</span> in Touch</h4>
             <p className="x-mini-title mt-3" align='justify'>For <span>Hiring, Business, or Collaboration</span> please contact me via email or other social media bellows.</p>
-            {contactlist.map((contact) => {
+            {/* {contactlist.map((contact) => {
                 return(
                     <div className="social-media" key={contact.id}>
                         <Link href={`${contact.url}`} className='sosmed-url' alt={contact.name} target={"_blank"}>
@@ -26,7 +26,7 @@ function Contact({contactlist}){
                         </Link>
                     </div>
                 )
-            })}
+            })} */}
         </div>
     )
 }
@@ -34,7 +34,7 @@ function Contact({contactlist}){
 export default Contact
 
 export async function getStaticProps(){
-    const response = await fetch('https://mahaasin.my.id/api/contact')
+    const response = await fetch('https://mahaasin.my.id/api/experience')
     const data = await response.json()
     console.log(data)
 
