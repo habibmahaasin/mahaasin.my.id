@@ -47,4 +47,20 @@ export const SkillsAndTools = [
         id : 12,
         title : 'Jira'
     },
+    {
+        id : 13,
+        title : 'Figma'
+    },
+    {
+        id : 14,
+        title : 'MySQL'
+    },
+    {
+        id : 15,
+        title : 'PostgreSQL'
+    },
+    {
+        id : 16,
+        title : 'Postman'
+    },
 ]

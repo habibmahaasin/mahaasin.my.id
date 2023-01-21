@@ -184,7 +184,7 @@ a {
 .horizonal-slider {
   display: grid;
   grid-gap: calc(var(--gutter) / 2);
-  grid-template-columns: repeat(12, calc(50% - var(--gutter) * 2));
+  grid-template-columns: repeat(16, calc(50% - var(--gutter) * 2));
   grid-template-rows: minmax(150px, 1fr);
   overflow-x: auto;
   scroll-snap-type: x proximity;
@@ -381,4 +381,16 @@ a {
 .wrapper-image{
   margin-top: 100px;
   max-width: 540px;
+}
+
+.menu-3{
+  margin-right: 40px;
+}
+
+.menu-1{
+  margin-left: 40px;
+}
+
+.contact-section{
+  padding-bottom: 50px;
 }
