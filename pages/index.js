@@ -23,7 +23,7 @@ function HomePage({dataSkill, dataExp, title}) {
                 <p className='mini-title'>Junior <span>Web Developer</span></p>
               </div>
             </div>
-            <p className='intro mt-4' align='justify'> Hi! , I'm <span>Habib Irfan Mahaasin</span> Junior Website Developer from Telkom University. I'm interested in learning about website development, especially the front-end web development with various frameworks, but I'm also still learning some parts of the back-end web development even though it's not too intensive.</p>
+            <p className='intro mt-4' align='justify'> Hi! , I'm <span>Habib Irfan Mahaasin</span> Junior Website Developer from Telkom University. I'm interested in learning about website development, especially front-end web development, but I'm also still learning back-end web development even though it's not too intensive.</p>
           </div>
         </div>
       </div>
