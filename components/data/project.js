@@ -5,7 +5,7 @@ export const Projects = [
         desc : 'Project instagram ini yaitu mereplikasi Responsive UI dari website instagram namun hanya beberapa page saja dengan API dummy user dari dummyapi.io. pada project ini lebih digunakan untuk berlatih cara menggunakan dan mengimplementasikan next-auth dengan Google Provider, mempelajari sessioning page & secure API dengan next-auth, serta melakukan deploy dari implementasi next-auth pada platform vercel',
         tech : 'Next Js, Next Auth, HTML5, CSS3, Bootstrap, React Icon',
         url : 'https://github.com/habibmahaasin/lnstagramUI-NextJs',
-        img : 'instagram-ui-nextjs'
+        img : 'instagram-ui-next'
     },
     {
         id : 2,
