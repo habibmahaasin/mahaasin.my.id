@@ -8,7 +8,7 @@ function Contact({contactlist,title}){
             <Head>
                 <title>{title}</title>
             </Head>
-            <h4 className='page-title mt-2'><span>Get</span> in Touch</h4>
+            <h4 className='page-title mt-2'><span>Get</span> in Touch </h4>
             <p className="x-mini-title mt-3" align='justify'>For <span>Hiring, Business, or Collaboration</span> please contact me via email or other social media bellows.</p>
             {contactlist.map((contact) => {
                 return(
