@@ -29,6 +29,7 @@ a {
   margin-top: 55px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 30px 30px 90px 30px;
+  min-height: 100vh;
 }
 
 .active-nav svg{
@@ -149,6 +150,20 @@ a {
   transform: scale(0.9);
 }
 
+.intro{
+  text-indent: 50px;
+}
+
+.url_others{
+  color: #056676;
+  transition: .2s ease;
+}
+
+.url_others:hover{
+  color: #078598;
+  transition: .2s ease;
+}
+
 .page-title span, .intro span, .mini-title span, .x-mini-title span{
   background-color: #056676;
   color: white;
@@ -186,7 +201,6 @@ a {
   grid-gap: calc(var(--gutter) / 2);
   grid-template-columns: repeat(16, calc(50% - var(--gutter) * 2));
   grid-template-rows: minmax(150px, 1fr);
-  overflow-x: auto;
   scroll-snap-type: x proximity;
   padding-bottom: calc(.75 * var(--gutter));
   margin-bottom: calc(-.25 * var(--gutter));
@@ -197,7 +211,21 @@ a {
 .horizontal-slider-container {
   width: 100%;
   overflow-y: hidden;
+  overflow-x: scroll;
   height: 130px;
+}
+
+.horizontal-slider-container::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.horizontal-slider-container::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: #056676;
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
 .item {
@@ -393,4 +421,14 @@ a {
 
 .contact-section{
   padding-bottom: 50px;
+}
+
+.title-name{
+  margin-top: 1rem !important;
+}
+
+@media screen and (max-width : 400px) {
+  .title-name{
+    margin-top: .5rem !important;
+  }
 }

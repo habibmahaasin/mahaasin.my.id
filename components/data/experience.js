@@ -3,7 +3,7 @@ export const Experience = [
         id : 1,
         company : 'Telkom Indonesia',
         as : 'Front-End Dev Intern',
-        time : 'Jul 2022 - Now'
+        time : 'Jul 2022 - Jun 2023'
     },
     {
         id : 2,

@@ -1,24 +1,32 @@
 export const Projects = [
     {
         id : 1,
+        title : 'Smart Aerators',
+        desc : 'Smart Aerators is a project in my final project. this website is a dashboard that is used to monitor IOT devices with several features such as, add device, control device, sensor calibration and charts to facilitate data reading by users. This website is connected to the Antares IOT platform for monitoring and controlling.',
+        tech : 'Go , HTML5, CSS3, Bootstrap, Javascript, Chart Js, Leaflet',
+        url : 'https://github.com/habibmahaasin/SmartAerators2.0',
+        img : 'smart-aerators'
+    },
+    {
+        id : 2,
         title : 'Instagram UI Project',
-        desc : 'Project instagram ini yaitu mereplikasi Responsive UI dari website instagram namun hanya beberapa page saja dengan API dummy user dari dummyapi.io. pada project ini lebih digunakan untuk berlatih cara menggunakan dan mengimplementasikan next-auth dengan Google Provider, mempelajari sessioning page & secure API dengan next-auth, serta melakukan deploy dari implementasi next-auth pada platform vercel',
+        desc : 'This Instagram project is replicating the Responsive UI of the Instagram website but only a few pages with the dummy user API from dummyapi.io. this project is more used to practice how to use and implement next-auth with Google Provider, learn sessioning pages & secure APIs with next-auth, and deploy the next-auth implementation on the vercel platform.',
         tech : 'Next Js, Next Auth, HTML5, CSS3, Bootstrap, React Icon',
         url : 'https://github.com/habibmahaasin/lnstagramUI-NextJs',
         img : 'instagram-ui-next'
     },
     {
-        id : 2,
+        id : 3,
         title : 'Website Portofolio',
-        desc : 'Website portofolio ini adalah salah satu website hasil dari belajar menggunakan framework Next Js. Seperti pada umumnya website ini adalah website statis berisikan tentang informasi diri dari pembuat.',
+        desc : 'This portfolio website is one of the websites resulting from learning to use the Next Js framework. As in general, this website is a static website containing personal information from the creator.',
         tech : 'Next Js, Bootstrap',
         url : 'https://github.com/habibmahaasin/mahaasin.my.id',
         img : 'portofolio'
     },
     {
-        id : 3,
+        id : 4,
         title : 'Monitoring Platform Smart Trash Can',
-        desc : 'Project monitoring platform IOT merupakan project yang dibuat untuk memenuhi tugas besar mata kuliah IOT, dimana project ini adalah website sederhana yang dapat digunakan untuk melakukan monitoring isi dari tempat sampah secara realtime. data dari database akan divisualisasikan pada website ini untuk memudahkan user melakukan pembacaan data.',
+        desc : 'The IOT monitoring platform project is a project created to fulfil the big assignment of the IOT course, where this project is a simple website that can be used to monitor the contents of the trash can in real time. data from the database will be visualised on this website to make it easier for users to read the data.',
         tech : 'Go , HTML5, CSS3, Bootstrap, Javascript, Chart Js',
         url : 'https://github.com/habibmahaasin/Monitoring-Platform-IOT',
         img : 'smart-trash-can'

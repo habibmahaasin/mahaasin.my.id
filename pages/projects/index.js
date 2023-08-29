@@ -56,6 +56,9 @@ function ProjectsPage({title}) {
           )
         })}
       </div>
+      <div className='text-center mt-4'>
+        <h6>to see other projects <a className='url_others' href='https://github.com/habibmahaasin?tab=repositories' target='_blank'><b>Click here</b></a></h6>
+      </div>
     </div>
   );
 }

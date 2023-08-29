@@ -38,7 +38,7 @@ function Contact({contactlist,title}){
 export default Contact
 
 export async function getStaticProps(){
-    const response = await fetch('https://mahaasin.my.id/api/contact')
+    const response = await fetch(`${process.env.DATA_URL}/api/contact`)
     const data = await response.json()
 
     return{

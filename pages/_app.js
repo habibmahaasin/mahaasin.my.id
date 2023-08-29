@@ -3,7 +3,6 @@ import Navigation from 'components/layouts/navigation'
 import Header from 'components/layouts/header'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Head from 'next/head'
-import Link from 'next/link'
 
 function MyApp({ Component, pageProps }) {
   if (Component.getLayout){

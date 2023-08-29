@@ -19,11 +19,11 @@ function HomePage({dataSkill, dataExp, title}) {
                 </div>
               </div>
               <div className='col-6 heading-profile w-75 mt-auto mb-auto'>
-                <h4 className='mt-3'>Habib Irfan Mahaasin</h4>
-                <p className='mini-title'>Junior <span>Web Developer</span></p>
+                <h4 className='title-name'>Habib Irfan Mahaasin</h4>
+                <p className='mini-title'>Website <span>Developer</span></p>
               </div>
             </div>
-            <p className='intro mt-4' align='justify'> Hi! , I'm <span>Habib Irfan Mahaasin</span> Junior Website Developer from Telkom University. I'm interested in learning about website development, especially front-end web development, but I'm also still learning back-end web development even though it's not too intensive.</p>
+            <p className='intro mt-3' align='justify'> Hi! , I'm <span>Habib Irfan Mahaasin,</span> a website developer. I am currently a fresh graduate from Telkom University. I am interested in learning and working in the field of software development, especially website development with various existing technologies and frameworks.</p>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@ function HomePage({dataSkill, dataExp, title}) {
       <h4 className='page-title mt-4'><span>Work</span> Experience</h4>
       {dataExp.map((exp) => {
         return(
-          <Link href={'/'} className='card-nav'>
+          // <Link href={'/'} className='card-nav'>
             <div className="card mt-4 rounded-4 pb-2" key={exp.id}>
               <div className="card-body">
                 <div className="row align-middle">
@@ -65,7 +65,7 @@ function HomePage({dataSkill, dataExp, title}) {
                 </div>
               </div>
             </div>
-          </Link>
+          // </Link>
         )
       })}
     </div>
@@ -75,10 +75,10 @@ function HomePage({dataSkill, dataExp, title}) {
 export default HomePage;
 
 export async function getStaticProps(){
-    const responseSnT = await fetch('https://mahaasin.my.id/api/skills-tools')
+    const responseSnT = await fetch(`${process.env.DATA_URL}/api/skills-tools`)
     const dataSnT = await responseSnT.json()
 
-    const responseExperience = await fetch('https://mahaasin.my.id/api/experience')
+    const responseExperience = await fetch(`${process.env.DATA_URL}/api/experience`)
     const dataExperience = await responseExperience.json()
 
     return{
