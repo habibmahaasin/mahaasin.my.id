@@ -1,7 +1,7 @@
 export const SkillsAndTools = [
     {
         id : 8,
-        title : 'Golang'
+        title : 'Go'
     },
     {
         id : 17,
