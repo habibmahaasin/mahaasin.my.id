@@ -1,7 +1,19 @@
 export const SkillsAndTools = [
     {
+        id : 8,
+        title : 'Golang'
+    },
+    {
+        id : 17,
+        title : 'ReactJs'
+    },
+    {
         id : 1,
         title : 'Next Js'
+    },
+    {
+        id : 6,
+        title : 'Javascript'
     },
     {
         id : 2,
@@ -20,16 +32,16 @@ export const SkillsAndTools = [
         title : 'Tailwind'
     },
     {
-        id : 6,
-        title : 'Javascript'
-    },
-    {
         id : 7,
         title : 'Python'
     },
     {
-        id : 8,
-        title : 'Golang'
+        id : 14,
+        title : 'MySQL'
+    },
+    {
+        id : 15,
+        title : 'PostgreSQL'
     },
     {
         id : 9,
@@ -50,14 +62,6 @@ export const SkillsAndTools = [
     {
         id : 13,
         title : 'Figma'
-    },
-    {
-        id : 14,
-        title : 'MySQL'
-    },
-    {
-        id : 15,
-        title : 'PostgreSQL'
     },
     {
         id : 16,
