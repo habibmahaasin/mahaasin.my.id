@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Sin - Portofolio</title>
         <link rel="shortcut icon" href="/static/favicon.ico" />
-        <html lang="en" />
       </Head>
       <Header/>
       <div className='background-content'>
