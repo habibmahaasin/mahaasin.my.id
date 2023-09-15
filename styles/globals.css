@@ -122,6 +122,16 @@ a {
   border: 1px solid #eaeaea;
 }
 
+.cv-download {
+  background: #fafafa;
+  text-align: center;
+  color: #056676;
+  padding: 8px 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
 .social-media{
   color: #056676;
   padding: 8px 10px;
@@ -432,3 +442,17 @@ a {
     margin-top: .5rem !important;
   }
 }
+
+.skill-list{
+  transition: .2s ease;
+}
+
+.skill-list img:hover {
+  transform: scale(1.3);
+  transition: .2s ease;
+}
+
+.skill-list:has(img:hover) img:not(:hover){
+  filter: grayscale(var(--value, 100%));
+}
+
