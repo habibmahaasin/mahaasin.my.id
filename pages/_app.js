@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
       <Header/>
-      <div className='background-content'>
+      <div className='background-content overflow-hidden'>
         <div className='container-web-app container-fluid px-4'>
           <Component {...pageProps} />
         </div>
