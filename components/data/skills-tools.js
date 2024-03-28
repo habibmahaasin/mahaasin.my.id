@@ -67,4 +67,8 @@ export const SkillsAndTools = [
         id : 16,
         title : 'Postman'
     },
+    {
+        id : 18,
+        title : 'Frammer Motion'
+    },
 ]
