@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function HomePage({ dataSkill, dataExp, title }) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <Head>
@@ -11,7 +18,11 @@ function HomePage({ dataSkill, dataExp, title }) {
       <h4 className="page-title mt-2">
         <span>About</span> Me
       </h4>
-      <div className="d-flex justify-content-between">
+      <div
+        className="d-flex justify-content-between"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+      >
         <div className="card mt-3">
           <div className="card-body">
             <div className="row align-middle">
@@ -55,13 +66,21 @@ function HomePage({ dataSkill, dataExp, title }) {
           </div>
         </div>
       </div>
-      <h4 className="page-title mt-4">
+      <h4
+        className="page-title mt-4"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="200"
+      >
         Skills & <span>Tools</span>
       </h4>
       <div className="skill-list mt-3 d-flex flex-wrap align-self-center justify-content-center">
-        {dataSkill.map((skill_tools) => {
+        {dataSkill.map((skill_tools, index) => {
           return (
             <Image
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay={index * 100}
               key={skill_tools.id}
               src={`/skills-tools/${skill_tools.id}.svg`}
               className="image"
@@ -73,13 +92,24 @@ function HomePage({ dataSkill, dataExp, title }) {
           );
         })}
       </div>
-      <h4 className="page-title mt-4">
+      <h4
+        className="page-title mt-4"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="300"
+      >
         <span>Work</span> Experience
       </h4>
-      {dataExp.map((exp) => {
+      {dataExp.map((exp, index) => {
         return (
           // <Link href={'/'} className='card-nav'>
-          <div className="card mt-4 rounded-4 pb-2" key={exp.id}>
+          <div
+            className="card mt-4 rounded-4 pb-2"
+            key={exp.id}
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-delay={index * 200}
+          >
             <div className="card-body">
               <div className="row align-middle">
                 <div className="col-6 profile-section w-25">
